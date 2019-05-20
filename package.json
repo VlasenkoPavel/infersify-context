@@ -1,0 +1,23 @@
+{
+  "name": "core",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "./node_modules/.bin/tslint --force 'src/**/*.ts' && ./node_modules/.bin/tsc --project tsconfig.build.json",
+    "build-dev": "./node_modules/.bin/tsc --watch --project tsconfig.build.json",
+    "tslint": "./node_modules/.bin/tslint 'src/**/*.ts'"
+  },
+  "dependencies": {
+    "@types/inversify": "^2.0.33",
+    "@types/inversify-inject-decorators": "^2.0.0",
+    "inversify": "^5.0.1",
+    "inversify-inject-decorators": "^3.1.0",
+    "reflect-metadata": "0.1.12"
+  },
+  "devDependencies": {
+    "@types/node": "8.0.46",
+    "tslint": "5.12.0",
+    "tslint-config-airbnb": "5.11.1",
+    "typescript": "3.3.3"
+  }
+}
